@@ -1,4 +1,4 @@
-package Java;
+package com.jackiifilwhh.Java;
 
 public class JavaAnalysis {
 
@@ -139,6 +139,8 @@ public class JavaAnalysis {
 			return SYM._RIGHT;
 		else if (string.equals(";"))
 			return SYM._FH;
+		else if (string.substring(0,1).equals("\"")&&string.substring(string.length()-1).equals("\""))
+			return SYM._INT;
 
 		char ch = string.charAt(0);
 		if (isLetter(ch) || ch == '_' || ch == '$') {
